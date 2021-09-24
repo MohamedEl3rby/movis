@@ -1,21 +1,27 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-class PlaylistsScreen extends StatelessWidget {
 
+class PlaylistsScreen extends StatelessWidget {
+  static String routeName = "/PlaylistsScreen";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
+        iconTheme: IconThemeData(color: Colors.black),
         title: new Row(
           children: [
-            new Image.asset("images/add.png",height: 30.0,width: 30.0,),
-            new Text("Add Playlists",style: TextStyle(color: Colors.black,fontSize: 20.0),),
-
-
+            new Image.asset(
+              "images/add.png",
+              height: 30.0,
+              width: 30.0,
+            ),
+            new Text(
+              "Add Playlists",
+              style: TextStyle(color: Colors.black, fontSize: 20.0),
+            ),
           ],
         ),
-
       ),
       body: new Container(
         color: Colors.black,
@@ -36,7 +42,11 @@ class PlaylistsScreen extends StatelessWidget {
                     color: Colors.white,
                     child: new Column(
                       children: [
-                        new Image.asset("images/file.png",height: 50.0,width: 50.0,),
+                        new Image.asset(
+                          "images/file.png",
+                          height: 50.0,
+                          width: 50.0,
+                        ),
                         new Divider(
                           thickness: 2.0,
                           height: 5.0,
@@ -45,7 +55,6 @@ class PlaylistsScreen extends StatelessWidget {
                         new Text("Manage Playlist Online"),
                       ],
                     ),
-
                   ),
                 ),
                 Padding(
@@ -56,7 +65,11 @@ class PlaylistsScreen extends StatelessWidget {
                     color: Colors.white,
                     child: new Column(
                       children: [
-                        new Image.asset("images/file.png",height: 50.0,width: 50.0,),
+                        new Image.asset(
+                          "images/file.png",
+                          height: 50.0,
+                          width: 50.0,
+                        ),
                         new Divider(
                           thickness: 2.0,
                           height: 5.0,
@@ -65,10 +78,8 @@ class PlaylistsScreen extends StatelessWidget {
                         new Text("Add Playlist URL"),
                       ],
                     ),
-
                   ),
                 ),
-
               ],
             ),
             new Divider(
@@ -86,7 +97,11 @@ class PlaylistsScreen extends StatelessWidget {
                     color: Colors.white,
                     child: new Column(
                       children: [
-                        new Image.asset("images/filee.png",height: 50.0,width: 50.0,),
+                        new Image.asset(
+                          "images/filee.png",
+                          height: 50.0,
+                          width: 50.0,
+                        ),
                         new Divider(
                           thickness: 2.0,
                           height: 5.0,
@@ -95,7 +110,6 @@ class PlaylistsScreen extends StatelessWidget {
                         new Text("Add Playlist File"),
                       ],
                     ),
-
                   ),
                 ),
                 Padding(
@@ -106,7 +120,11 @@ class PlaylistsScreen extends StatelessWidget {
                     color: Colors.white,
                     child: new Column(
                       children: [
-                        new Image.asset("images/filevideo.png",height: 50.0,width: 50.0,),
+                        new Image.asset(
+                          "images/filevideo.png",
+                          height: 50.0,
+                          width: 50.0,
+                        ),
                         new Divider(
                           thickness: 2.0,
                           height: 5.0,
@@ -115,17 +133,13 @@ class PlaylistsScreen extends StatelessWidget {
                         new Text("Play File"),
                       ],
                     ),
-
                   ),
                 ),
-
               ],
             ),
-
           ],
         ),
       ),
-
     );
   }
 }

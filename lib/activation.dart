@@ -1,16 +1,28 @@
-import"package:flutter/material.dart";
-class ActivationScreen extends StatelessWidget {
+import "package:flutter/material.dart";
 
+class ActivationScreen extends StatelessWidget {
+  static String routeName = "/ActivationScreen";
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
+        iconTheme: IconThemeData(color: Colors.black),
         title: new Row(
           children: [
-            new Image.asset("images/note.png",height: 30.0,width: 30.0,),
-            new Text("Activation",style: TextStyle(color: Colors.black,fontSize: 15.0,fontWeight: FontWeight.bold),),
+            new Image.asset(
+              "images/note.png",
+              height: 30.0,
+              width: 30.0,
+            ),
+            new Text(
+              "Activation",
+              style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15.0,
+                  fontWeight: FontWeight.bold),
+            ),
           ],
         ),
       ),
@@ -28,7 +40,13 @@ class ActivationScreen extends StatelessWidget {
                     color: Colors.white,
                     child: new Column(
                       children: [
-                        new Text("Device ID",style: TextStyle(color: Colors.black,fontSize: 15.0,fontWeight: FontWeight.bold),),
+                        new Text(
+                          "Device ID",
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 15.0,
+                              fontWeight: FontWeight.bold),
+                        ),
                         new Divider(
                           thickness: 2.0,
                           height: 5.0,
@@ -37,7 +55,6 @@ class ActivationScreen extends StatelessWidget {
                         new Text("9C:2B:F7:6A:13:DC"),
                       ],
                     ),
-
                   ),
                 ),
                 Padding(
@@ -48,8 +65,13 @@ class ActivationScreen extends StatelessWidget {
                     color: Colors.white,
                     child: new Column(
                       children: [
-                        new Text("Device Key",style: TextStyle(color: Colors.black,
-                            fontSize: 15.0,fontWeight: FontWeight.bold),),
+                        new Text(
+                          "Device Key",
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 15.0,
+                              fontWeight: FontWeight.bold),
+                        ),
                         new Divider(
                           thickness: 2.0,
                           height: 15.0,
@@ -58,10 +80,8 @@ class ActivationScreen extends StatelessWidget {
                         new Text("755706942"),
                       ],
                     ),
-
                   ),
                 ),
-
               ],
             ),
             new Divider(
@@ -79,12 +99,15 @@ class ActivationScreen extends StatelessWidget {
                     color: Colors.greenAccent,
                     child: new Column(
                       children: [
-                        new Text("Activation ID",style: TextStyle(color: Colors.black,
-                            fontSize: 15.0,fontWeight: FontWeight.bold),),
-
+                        new Text(
+                          "Activation ID",
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 15.0,
+                              fontWeight: FontWeight.bold),
+                        ),
                       ],
                     ),
-
                   ),
                 ),
                 Padding(
@@ -95,15 +118,17 @@ class ActivationScreen extends StatelessWidget {
                     color: Colors.blueAccent,
                     child: new Column(
                       children: [
-                        new Text(" Transfer Activation",style: TextStyle(color: Colors.black,
-                            fontSize: 15.0,fontWeight: FontWeight.bold),),
-
+                        new Text(
+                          " Transfer Activation",
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 15.0,
+                              fontWeight: FontWeight.bold),
+                        ),
                       ],
                     ),
-
                   ),
                 ),
-
               ],
             ),
             new Divider(
@@ -111,20 +136,33 @@ class ActivationScreen extends StatelessWidget {
               height: 10.0,
               color: Colors.black,
             ),
-
             new Container(
               color: Colors.white,
               height: 72.0,
               width: 300.0,
               child: new Column(
                 children: [
-                  new Text(" Status : Active",style: TextStyle(color: Colors.black,
-                      fontSize: 15.0,fontWeight: FontWeight.bold),),
-                  new Text(" Expiration Date : 5 - Sep-2021",style: TextStyle(color: Colors.black,
-                      fontSize: 15.0,fontWeight: FontWeight.bold),),
-                  new Text(" Remaning : 4 days . 2Hours",style: TextStyle(color: Colors.black,
-                      fontSize: 15.0,fontWeight: FontWeight.bold),),
-
+                  new Text(
+                    " Status : Active",
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 15.0,
+                        fontWeight: FontWeight.bold),
+                  ),
+                  new Text(
+                    " Expiration Date : 5 - Sep-2021",
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 15.0,
+                        fontWeight: FontWeight.bold),
+                  ),
+                  new Text(
+                    " Remaning : 4 days . 2Hours",
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 15.0,
+                        fontWeight: FontWeight.bold),
+                  ),
                 ],
               ),
             ),
@@ -141,12 +179,15 @@ class ActivationScreen extends StatelessWidget {
                 color: Colors.blueAccent,
                 child: new Column(
                   children: [
-                    new Text(" Renew for this device",style: TextStyle(color: Colors.white,
-                        fontSize: 15.0,fontWeight: FontWeight.bold),),
-
+                    new Text(
+                      " Renew for this device",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 15.0,
+                          fontWeight: FontWeight.bold),
+                    ),
                   ],
                 ),
-
               ),
             ),
             Padding(
@@ -157,12 +198,15 @@ class ActivationScreen extends StatelessWidget {
                 color: Colors.blueAccent,
                 child: new Column(
                   children: [
-                    new Text("Renew for another device",style: TextStyle(color: Colors.white,
-                        fontSize: 15.0,fontWeight: FontWeight.bold),),
-
+                    new Text(
+                      "Renew for another device",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 15.0,
+                          fontWeight: FontWeight.bold),
+                    ),
                   ],
                 ),
-
               ),
             ),
             Padding(
@@ -173,12 +217,15 @@ class ActivationScreen extends StatelessWidget {
                 color: Colors.blueAccent,
                 child: new Column(
                   children: [
-                    new Text("Reseller Packages",style: TextStyle(color: Colors.white,
-                        fontSize: 15.0,fontWeight: FontWeight.bold),),
-
+                    new Text(
+                      "Reseller Packages",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 15.0,
+                          fontWeight: FontWeight.bold),
+                    ),
                   ],
                 ),
-
               ),
             ),
             Padding(
@@ -189,21 +236,17 @@ class ActivationScreen extends StatelessWidget {
                 color: Colors.blueAccent,
                 child: new Column(
                   children: [
-                    new Text("Close",style: TextStyle(color: Colors.white,
-                        fontSize: 15.0,fontWeight: FontWeight.bold),),
-
+                    new Text(
+                      "Close",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 15.0,
+                          fontWeight: FontWeight.bold),
+                    ),
                   ],
                 ),
-
               ),
             ),
-
-
-
-
-
-
-
           ],
         ),
       ),

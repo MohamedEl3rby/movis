@@ -1,16 +1,25 @@
 import 'package:flutter/material.dart';
-class SettingScreen extends StatelessWidget {
 
+class SettingScreen extends StatelessWidget {
+  static String routeName = "/SettingScreen";
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
+        iconTheme: IconThemeData(color: Colors.black),
         title: new Row(
           children: [
-            new Image.asset("images/logosett.png",height: 30,width: 50.0,),
-            new Text("Settings",style: TextStyle(color: Colors.black),),
+            new Image.asset(
+              "images/logosett.png",
+              height: 30,
+              width: 50.0,
+            ),
+            new Text(
+              "Settings",
+              style: TextStyle(color: Colors.black),
+            ),
           ],
         ),
       ),
@@ -33,7 +42,11 @@ class SettingScreen extends StatelessWidget {
                     color: Colors.white,
                     child: new Column(
                       children: [
-                        new Image.asset("images/setting.png",height: 50.0,width: 50.0,),
+                        new Image.asset(
+                          "images/setting.png",
+                          height: 50.0,
+                          width: 50.0,
+                        ),
                         new Divider(
                           thickness: 2.0,
                           height: 5.0,
@@ -42,7 +55,6 @@ class SettingScreen extends StatelessWidget {
                         new Text("General Settings"),
                       ],
                     ),
-
                   ),
                 ),
                 Padding(
@@ -53,7 +65,11 @@ class SettingScreen extends StatelessWidget {
                     color: Colors.white,
                     child: new Column(
                       children: [
-                        new Image.asset("images/vido.jpg",height: 50.0,width: 50.0,),
+                        new Image.asset(
+                          "images/vido.jpg",
+                          height: 50.0,
+                          width: 50.0,
+                        ),
                         new Divider(
                           thickness: 2.0,
                           height: 5.0,
@@ -62,10 +78,8 @@ class SettingScreen extends StatelessWidget {
                         new Text("video player Settings"),
                       ],
                     ),
-
                   ),
                 ),
-
               ],
             ),
             new Divider(
@@ -83,7 +97,11 @@ class SettingScreen extends StatelessWidget {
                     color: Colors.white,
                     child: new Column(
                       children: [
-                        new Image.asset("images/sec.jpg",height: 50.0,width: 50.0,),
+                        new Image.asset(
+                          "images/sec.jpg",
+                          height: 50.0,
+                          width: 50.0,
+                        ),
                         new Divider(
                           thickness: 2.0,
                           height: 5.0,
@@ -92,7 +110,6 @@ class SettingScreen extends StatelessWidget {
                         new Text("Security Settings"),
                       ],
                     ),
-
                   ),
                 ),
                 Padding(
@@ -103,7 +120,11 @@ class SettingScreen extends StatelessWidget {
                     color: Colors.white,
                     child: new Column(
                       children: [
-                        new Image.asset("images/control.jpg",height: 50.0,width: 50.0,),
+                        new Image.asset(
+                          "images/control.jpg",
+                          height: 50.0,
+                          width: 50.0,
+                        ),
                         new Divider(
                           thickness: 2.0,
                           height: 5.0,
@@ -112,10 +133,8 @@ class SettingScreen extends StatelessWidget {
                         new Text("Parental Control"),
                       ],
                     ),
-
                   ),
                 ),
-
               ],
             ),
             new Row(
@@ -128,7 +147,11 @@ class SettingScreen extends StatelessWidget {
                     color: Colors.white,
                     child: new Column(
                       children: [
-                        new Image.asset("images/store.png",height: 50.0,width: 50.0,),
+                        new Image.asset(
+                          "images/store.png",
+                          height: 50.0,
+                          width: 50.0,
+                        ),
                         new Divider(
                           thickness: 2.0,
                           height: 5.0,
@@ -137,7 +160,6 @@ class SettingScreen extends StatelessWidget {
                         new Text("Backe up & restore"),
                       ],
                     ),
-
                   ),
                 ),
                 Padding(
@@ -148,7 +170,11 @@ class SettingScreen extends StatelessWidget {
                     color: Colors.white,
                     child: new Column(
                       children: [
-                        new Image.asset("images/note.png",height: 50.0,width: 50.0,),
+                        new Image.asset(
+                          "images/note.png",
+                          height: 50.0,
+                          width: 50.0,
+                        ),
                         new Divider(
                           thickness: 2.0,
                           height: 5.0,
@@ -157,10 +183,8 @@ class SettingScreen extends StatelessWidget {
                         new Text("Activation"),
                       ],
                     ),
-
                   ),
                 ),
-
               ],
             ),
             new Row(
@@ -173,7 +197,11 @@ class SettingScreen extends StatelessWidget {
                     color: Colors.white,
                     child: new Column(
                       children: [
-                        new Image.asset("images/infor.png",height: 50.0,width: 50.0,),
+                        new Image.asset(
+                          "images/infor.png",
+                          height: 50.0,
+                          width: 50.0,
+                        ),
                         new Divider(
                           thickness: 2.0,
                           height: 5.0,
@@ -182,11 +210,8 @@ class SettingScreen extends StatelessWidget {
                         new Text("System Information"),
                       ],
                     ),
-
                   ),
                 ),
-
-
               ],
             ),
             new Divider(
@@ -194,17 +219,20 @@ class SettingScreen extends StatelessWidget {
               height: 15.0,
               color: Colors.black,
             ),
-            new Container(
-              color: Colors.white,
-              height: 50.0,
-              width: 50.0,
-              child: new Image.asset("images/close.png"),
+            GestureDetector(
+              onTap: () {
+                Navigator.of(context).pop();
+              },
+              child: new Container(
+                color: Colors.white,
+                height: 50.0,
+                width: 50.0,
+                child: new Image.asset("images/close.png"),
+              ),
             ),
-
           ],
         ),
       ),
-
     );
   }
 }
