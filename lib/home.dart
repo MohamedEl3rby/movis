@@ -39,7 +39,7 @@ class HomeScreen extends StatelessWidget {
           child: Stack(
         children: [
           Container(
-            height: MediaQuery.of(context).size.height * 1.1,
+            height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
             decoration: BoxDecoration(
                 image: DecorationImage(
@@ -47,14 +47,15 @@ class HomeScreen extends StatelessWidget {
                     fit: BoxFit.fitWidth)),
           ),
           Container(
+            width: double.infinity,
             // color: Colors.white,
             child: new Column(
               children: [
-                new Divider(
-                  thickness: 2.0,
-                  height: 30.0,
-                  color: Colors.white,
-                ),
+                // new Divider(
+                //   thickness: 2.0,
+                //   height: 30.0,
+                //   color: Colors.white,
+                // ),
                 new Text(
                   "MoviesPlay is free to try for 7 days",
                   style: TextStyle(color: Colors.black, fontSize: 20.0),
@@ -67,11 +68,11 @@ class HomeScreen extends StatelessWidget {
                   "a small amount to support the app .",
                   style: TextStyle(color: Colors.black, fontSize: 20.0),
                 ),
-                new Divider(
-                  thickness: 2.0,
-                  height: 30.0,
-                  color: Colors.white,
-                ),
+                // new Divider(
+                //   thickness: 2.0,
+                //   height: 30.0,
+                //   color: Colors.white,
+                // ),
                 new Container(
                   color: Colors.black,
                   height: 60.0,
@@ -82,11 +83,11 @@ class HomeScreen extends StatelessWidget {
                         "6 months activation cost only 0.99 dollars ",
                         style: TextStyle(color: Colors.white, fontSize: 15.0),
                       ),
-                      new Divider(
-                        thickness: 2.0,
-                        height: 15.0,
-                        color: Colors.black,
-                      ),
+                      // new Divider(
+                      //   thickness: 2.0,
+                      //   height: 15.0,
+                      //   color: Colors.black,
+                      // ),
                       new Text(
                         "1 year activation cost only 1.99 dollars",
                         style: TextStyle(color: Colors.white, fontSize: 15.0),
@@ -94,11 +95,11 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
                 ),
-                new Divider(
-                  thickness: 2.0,
-                  height: 30.0,
-                  color: Colors.white,
-                ),
+                // new Divider(
+                //   thickness: 2.0,
+                //   height: 30.0,
+                //   color: Colors.white,
+                // ),
                 new Text(
                   "Device ID",
                   style: TextStyle(color: Colors.red, fontSize: 15.0),
@@ -107,11 +108,11 @@ class HomeScreen extends StatelessWidget {
                   "9C:28:F7:6A:13:DC",
                   style: TextStyle(color: Colors.black, fontSize: 15.0),
                 ),
-                new Divider(
-                  thickness: 2.0,
-                  height: 30.0,
-                  color: Colors.white,
-                ),
+                // new Divider(
+                //   thickness: 2.0,
+                //   height: 30.0,
+                //   color: Colors.white,
+                // ),
                 new Text(
                   "Device Key",
                   style: TextStyle(color: Colors.red, fontSize: 15.0),
@@ -120,11 +121,11 @@ class HomeScreen extends StatelessWidget {
                   "75521455",
                   style: TextStyle(color: Colors.black, fontSize: 15.0),
                 ),
-                new Divider(
-                  thickness: 2.0,
-                  height: 30.0,
-                  color: Colors.white,
-                ),
+                // new Divider(
+                //   thickness: 2.0,
+                //   height: 30.0,
+                //   color: Colors.white,
+                // ),
                 GestureDetector(
                   onTap: () {
                     Navigator.of(context).pushNamed(ActivationScreen.routeName);
@@ -140,11 +141,11 @@ class HomeScreen extends StatelessWidget {
                     )),
                   ),
                 ),
-                new Divider(
-                  thickness: 2.0,
-                  height: 10.0,
-                  color: Colors.white,
-                ),
+                // new Divider(
+                //   thickness: 2.0,
+                //   height: 10.0,
+                //   color: Colors.white,
+                // ),
                 GestureDetector(
                   onTap: () {
                     Navigator.of(context).pushNamed(ChooseScreen.routeName);
